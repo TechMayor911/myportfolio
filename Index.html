@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Sedan+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Frontend developer</p>
+            <h1>Hi, i am <span>Mayowa</span><br> from Nigeria</h1>
+        </div>
+        </div>
+    </div>  
+    <!--about my ingenius-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="c:\Users\Mayor\Downloads\WIN_20240328_17_59_23_Pro-removebg-preview.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I am Wariola Mayowa, a proffesional frontend developer who's globally known as the greatest programmer to walk the earth, my experience is unmatched, i learnt the craft in eternity, the realm of <b>GOD</b>, thus my advantage over the genius and supposed intellectual prowess of mere mortals. I was ordained in the realms of heaven, anointed in the shrine of the most high <b>GOD</b> who dwelleth in a location called light, a location which the hearts of men have not yet perceived, where geological excellence cannot reveal, indeed the wisdom of men cannot know. That is from whence i get my ordination, to pave the way for the next generation of elite and immaculate programmers, those who will come forth from the belly of Zion and purge the tech world of mortal imperfections, coming with a sword of divine wisdom from another realm, breathing no more 02 but <b>ZOE</b>, talking no more words but life, writing no more codes but life, spirit life. Welcome to my page amigos. <b> ישוע הוא אלוהים<b> </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab ('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web development</span><br>Web app development</li>
+                                <li><span>Writing</span><br>Freelance writer</li>
+                                <li><span>Teacher</span><br>Gospel teacher</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aut sint saepe inventore alias nam iure, iusto nihil magnam rerum ratione, quos facilis libero cumque deserunt porro eveniet et eum!</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas sequi, dicta fugit ipsa ad aspernatur sed optio culpa cum possimus maxime exercitationem veniam repellendus id fuga architecto corrupti vitae esse!</li>
+                            
+                            </ul>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+      <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web development</h2>
+                    <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus, autem quis minus harum modi nostrum sapiente officiis non voluptate, impedit reprehenderit reiciendis nisi cumque aliquid iste rerum assumenda magni?</small></p>
+                    <a href="b">Learn more</a>
+                </div>
+
+                <div>
+                    <h2>Writer</h2>
+                    <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus, autem quis minus harum modi nostrum sapiente officiis non voluptate, impedit reprehenderit reiciendis nisi cumque aliquid iste rerum assumenda magni?</small></p>
+                    <a href="b">Learn more</a>
+                </div>
+
+                <div>
+                    <h2>Teacher</h2>
+                    <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus, autem quis minus harum modi nostrum sapiente officiis non voluptate, impedit reprehenderit reiciendis nisi cumque aliquid iste rerum assumenda magni?</p></small></p>
+                    <a href="b">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+      </div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+           function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+           }
+            
+    </script>
+    
+        
+    
+</body>
+</html>
